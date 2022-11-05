@@ -13,4 +13,20 @@ def display():
     print(f"List: {list1}")
     whatToDo = input("What do you want to do? (1-9): ")
 
+    if whatToDo == "1":
+        appendElement = int(input("Enter the element you want to append: "))
+        list1.append(appendElement)
+        print("The element has been appended.\n")
+        print(f"This is the new array: {list1}")
+
+    elif whatToDo == "2":
+        insertElement = int(input("Enter the element you want to insert: "))
+        positionInsert = int(input("Enter the position: "))
+        list1.insert(positionInsert, insertElement)
+        print("The element has been inserted.\n")
+        print(f"This is the new array: {list1}")
+    
+    else:
+        print("Input not recognized.")
+
 display()
