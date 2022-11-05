@@ -39,6 +39,16 @@ def display():
         print("The element has been deleted.\n")
         print(f"This is the new array: {list1}")
 
+    elif whatToDo == "5":
+        print("The array has been sorted.\n")
+        list1.sort()
+        print(f"This is the new array: {list1}")
+
+    elif whatToDo == "6":
+        print("The array has been sorted.\n")
+        list1.sort(reverse = True)
+        print(f"Updated List: {list1}")
+
     else:
         print("Input not recognized.")
 
