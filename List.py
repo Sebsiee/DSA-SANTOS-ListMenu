@@ -26,6 +26,19 @@ def display():
         print("The element has been inserted.\n")
         print(f"This is the new array: {list1}")
     
+    elif whatToDo == "3":
+        modifyElement = int(input("Enter the element you want to modify: "))
+        positionModify = int(input("Enter the position: "))
+        list1[positionModify] = modifyElement
+        print("The element has been modified.\n")
+        print(f"This is the new array: {list1}")
+
+    elif whatToDo == "4":
+        deleteElement = int(input("Enter the element you want to delete: "))
+        list1.remove(deleteElement)
+        print("The element has been deleted.\n")
+        print(f"This is the new array: {list1}")
+
     else:
         print("Input not recognized.")
 
