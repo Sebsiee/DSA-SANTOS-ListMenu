@@ -49,6 +49,19 @@ def display():
         list1.sort(reverse = True)
         print(f"Updated List: {list1}")
 
+    elif whatToDo == "7":
+        countElement = int(input("Enter the element you want to count: "))
+        counted = list1.count(countElement)
+        print(f"The element {countElement} appeared {counted} time/s.")
+
+    elif whatToDo == "8":
+        smallest = min(list1)
+        print(f"The element '{smallest}' is the smallest.")
+
+    elif whatToDo == "9":
+        largest = max(list1)
+        print(f"The element '{largest}' is the largest.")
+
     else:
         print("Input not recognized.")
 
